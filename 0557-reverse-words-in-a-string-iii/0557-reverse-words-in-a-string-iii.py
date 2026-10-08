@@ -4,6 +4,6 @@ class Solution:
         words = s.split(" ")
         for w in words:
             res.append(w[::-1])
-        return(" ".join(res))
+        return " ".join(res)
        
         
