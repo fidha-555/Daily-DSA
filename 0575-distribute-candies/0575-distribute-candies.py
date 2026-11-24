@@ -1,14 +1,12 @@
 class Solution:
     def distributeCandies(self, candyType: list[int]) -> int:
-        n=len(candyType)
-        allowed = n // 2
-        diff_types = set(candyType) 
-        count_types = len(diff_types)
-        if count_types < allowed:
-            return count_types
+        half = len(candyType)//2
+        n_type = len(set(candyType))
+        if n_type < half:
+            return n_type
         else:
-            return allowed
+            return half
+            
 
 
 
-        
